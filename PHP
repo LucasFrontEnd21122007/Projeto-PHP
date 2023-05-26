@@ -1,0 +1,42 @@
+<?php
+
+// Classe de exemplo para manipulação de usuários
+class User
+{
+    private $name;
+    private $email;
+    
+    public function __construct($name, $email)
+    {
+        $this->name = $name;
+        $this->email = $email;
+    }
+    
+    public function getName()
+    {
+        return $this->name;
+    }
+    
+    public function getEmail()
+    {
+        return $this->email;
+    }
+    
+    // Método complexo que realiza alguma lógica avançada
+    public function complexMethod()
+    {
+        // Código complexo aqui...
+        // Exemplo: fazer uma chamada a uma API externa, processar os dados, fazer cálculos, etc.
+        
+        // Retorno de um resultado simulado
+        return 'Resultado complexo';
+    }
+}
+
+// Exemplo de uso da classe User
+$user = new User('João', 'joao@example.com');
+echo $user->getName(); // Saída: João
+echo $user->getEmail(); // Saída: joao@example.com
+
+$result = $user->complexMethod();
+echo $result; // Saída: Resultado complexo
